@@ -1,14 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
+import '@fontsource/lora'
 import '@fontsource/playfair-display/700.css'
 
-const Hi = styled.div`
-  text-align: center;
-  font-family: "Playfair Display";
-  font-size: 2em;
-  font-weight: 700;
+import Header from '../components/header'
+import Hero from '../components/hero'
+
+const Page = styled.div`
+  margin: 30px 120px;
+  font-family: "Lora";
+
+  &>* {
+    margin-top: 60px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 `
 
-export default function Home() {
-  return <Hi>Let’s Learn and Thrive. Together.</Hi>
-}
+const Home = () => (
+  <Page>
+    <Header/>
+    <Hero/>
+  </Page>
+)
+
+
+export default Home
