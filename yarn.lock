@@ -984,6 +984,11 @@
     ts-node "^9"
     tslib "^2"
 
+"@fontsource/playfair-display@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-4.2.1.tgz#7886e3b9514912703fc03354a799b024d72e1370"
+  integrity sha512-ja2sXyRvMJypJfWE8dnayUEDRsl5CJ3F2JEDpAoiwEcXTWWgHNm2L2Qd4/LQ1U8+4LdGZ4EDmGHMYE5re9nBvQ==
+
 "@graphql-tools/batch-execute@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-7.0.0.tgz#e79d11bd5b39f29172f6ec2eafa71103c6a6c85b"
