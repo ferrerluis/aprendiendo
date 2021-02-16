@@ -23,11 +23,11 @@ const TextContainer = styled.div`
 const Title = styled.div`
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
 `
 
 const Body = styled.div`
-  font-size: 24px;
+  font-size: 22px;
 `
 
 const Action = styled.a`
@@ -50,6 +50,7 @@ const Image = styled.img`
   width: 460px;
   height: 530px;
   object-fit: cover;
+  object-position: 25% 0;
 `
 
 const Hero = () => (
@@ -65,7 +66,7 @@ const Hero = () => (
       </Body>
       <Action href="https://calendly.com/aprendiendo-consulting">Let’s Talk</Action>
     </TextContainer>
-    <Image src="/images/hero.jpg"/>
+    <Image src="/images/team.jpg"/>
   </Container>
 )
 

@@ -9,6 +9,7 @@ import Hero from '../components/hero'
 const Page = styled.div`
   margin: 30px 120px;
   font-family: "Lora";
+  color: #333333;
 
   &>* {
     margin-top: 60px;
