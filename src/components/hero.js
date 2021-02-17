@@ -37,11 +37,11 @@ const Action = styled.a`
   background-color: #6BA3FF;
   padding: 10px 25px;
   border-radius: 5px;
-  transition: border-bottom 0.2s;
+  transition: border-bottom 0.1s;
 
   &:hover {
     border-bottom: 3px solid #517dc4;
-    transition: border-bottom 0.2s;
+    transition: border-bottom 0.1s;
   }
 `
 
