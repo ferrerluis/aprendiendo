@@ -5,7 +5,6 @@ const Container = styled.div`
 `
 
 const Logo = styled.div`
-  font-family: "Lora";
   font-size: 18px;
 `
 

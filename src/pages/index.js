@@ -5,6 +5,7 @@ import '@fontsource/playfair-display/700.css'
 
 import Header from '../components/header'
 import Hero from '../components/hero'
+import Footer from '../components/footer'
 
 const Page = styled.div`
   margin: 30px 120px;
@@ -24,6 +25,7 @@ const Home = () => (
   <Page>
     <Header/>
     <Hero/>
+    <Footer/>
   </Page>
 )
 
