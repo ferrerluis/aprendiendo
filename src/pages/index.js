@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Helmet } from "react-helmet"
+
 import '@fontsource/lora'
 import '@fontsource/playfair-display/700.css'
 
@@ -22,11 +24,18 @@ const Page = styled.div`
 `
 
 const Home = () => (
-  <Page>
-    <Header/>
-    <Hero/>
-    <Footer/>
-  </Page>
+  <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Aprendiendo Consulting</title>
+      <link rel="canonical" href="https://aprendiendo.us" />
+    </Helmet>
+    <Page>
+      <Header/>
+      <Hero/>
+      <Footer/>
+    </Page>
+  </>
 )
 
 

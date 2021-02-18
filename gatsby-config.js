@@ -7,15 +7,13 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-styled-components',
-      options: {},
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'static/favicon.png'
       },
-    }
+    },
   ],
 }
