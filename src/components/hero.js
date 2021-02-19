@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Highlight from './highlight'
-import { isTablet } from '../lib/responsive'
+import { isSmallTablet, isTablet } from '../lib/responsive'
 
 const Container = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ const TextContainer = styled.div`
     margin-bottom: 40px;
   }
 
-  ${isTablet} {
+  ${isSmallTablet} {
     margin: 0;
   }
 `
@@ -50,11 +50,15 @@ const Action = styled.a`
 const Image = styled.img`
   border-radius: 10px;
   width: 460px;
-  height: 530px;
+  aspect-ratio: 23 / 27;
   object-fit: cover;
   object-position: 25% 0;
 
   ${isTablet} {
+    width: 360px;
+  }
+
+  ${isSmallTablet} {
     display: none;
   }
 `
