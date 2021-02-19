@@ -15,12 +15,8 @@ const Page = styled.div`
   font-family: "Lora";
   color: #333333;
 
-  &>* {
-    margin-top: 60px;
-
-    &:first-child {
-      margin-top: 0;
-    }
+  &>*:not(:last-child) {
+    margin-bottom: 60px;
   }
 
   ${isTablet} {
