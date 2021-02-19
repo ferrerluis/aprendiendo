@@ -32,6 +32,7 @@ const Body = styled.div`
 `
 
 const Action = styled.a`
+  display: inline-block;
   font-size: 18px;
   text-decoration: none;
   color: #FFF;
