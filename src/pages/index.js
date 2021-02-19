@@ -8,6 +8,7 @@ import '@fontsource/playfair-display/700.css'
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
+import { isTablet } from '../lib/responsive'
 
 const Page = styled.div`
   margin: 30px 120px;
@@ -20,6 +21,10 @@ const Page = styled.div`
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  ${isTablet} {
+    margin: 30px;
   }
 `
 

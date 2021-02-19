@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Highlight from './highlight'
+import { isTablet } from '../lib/responsive'
 
 const Container = styled.div`
   display: flex;
@@ -11,12 +12,12 @@ const Container = styled.div`
 const TextContainer = styled.div`
   margin-right: 60px;
 
-  &>* {
+  &>*:not(:last-child) {
     margin-bottom: 40px;
+  }
 
-    &::last-child {
-      margin-bottom: 0;
-    }
+  ${isTablet} {
+    margin: 0;
   }
 `
 
@@ -51,6 +52,10 @@ const Image = styled.img`
   height: 530px;
   object-fit: cover;
   object-position: 25% 0;
+
+  ${isTablet} {
+    display: none;
+  }
 `
 
 const Hero = () => (
